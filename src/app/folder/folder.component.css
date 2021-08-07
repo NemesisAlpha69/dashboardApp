@@ -1,0 +1,21 @@
+.option{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 200px;
+  padding: 0 10px;
+  cursor: pointer;
+}
+
+.option:hover{
+  background: #8080803d;
+}
+
+.option p {
+  margin: 0;
+}
+
+.icon{
+  font-size: 25px;
+  color: #00aab4;
+}

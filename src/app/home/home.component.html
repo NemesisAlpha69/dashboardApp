@@ -1,0 +1,45 @@
+<div class="d-flex">
+    <div class="principal">
+        <div class="option select">Gestiones</div>
+        <div class="option">Nuevas</div>
+        <div>
+            <div>
+                <app-folder name="Categoria 1"></app-folder>
+                <app-folder name="Categoria 2"></app-folder>
+                <app-folder name="Categoria 3"></app-folder>
+                <app-folder name="Categoria 4"></app-folder>
+            </div>
+        </div>
+    </div>
+    <div class="secundary {{open}}">
+        <div class="optionsContent">
+            <div class="opt">
+                <fa-icon [icon]="faPlus" class="optIcon"></fa-icon>
+                Agregar
+            </div>
+            <div class="opt">
+                ordenar
+                <fa-icon [icon]="filter" class="optIcon"></fa-icon>
+            </div>
+        </div>
+        <input type="text" placeholder="Buscar" class="search">
+        <div>
+            <div class="titles">
+                <div class="title">Numero</div>
+                <div class="title">Nombre</div>
+                <div class="title">Codigo</div>
+            </div>
+            <div class="file">
+                <app-file id="1" name="Luis Ramirez" code="43742632317"></app-file>
+                <app-file id="2" name="Luis Ramirez" code="12359632347" color="blue"></app-file>
+                <app-file id="3" name="Luis Ramirez" code="43734312346"></app-file>
+                <app-file id="7" name="Luis Ramirez" code="33234358234"></app-file>
+                <app-file id="4" name="Luis Ramirez" code="79443632380" color="pink"></app-file>
+                <app-file id="5" name="Luis Ramirez" code="68432632358"></app-file>
+            </div>
+        </div>
+    </div>
+    <div class="showHide">
+        <div (click)="showHide()" class="btnshowhide">=</div>
+    </div>
+</div>
